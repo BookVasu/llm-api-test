@@ -1,0 +1,6 @@
+# Primary model
+google/gemma-4-31b-it:free
+
+# Fallback models
+openai/gpt-oss-20b:free
+meta-llama/llama-3.3-70b-instruct:free

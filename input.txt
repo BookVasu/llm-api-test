@@ -1,0 +1,71 @@
+{
+  "validated_result": {
+    "status": "validated",
+    "equation": "NaCl + H2SO4 -> NaHSO4 + HCl",
+    "reaction_type": "volatile acid displacement",
+    "engine": "deterministic_inorganic_rule_engine",
+    "atom_balanced": true,
+    "charge_balanced": true,
+    "condition_match": true,
+    "assumptions": [
+      "Sodium chloride is solid.",
+      "Sulfuric acid is concentrated."
+    ]
+  },
+  "calculations": {
+    "input_amounts": {
+      "NaCl_mol": 1.0,
+      "H2SO4_mol": 1.0
+    },
+    "molar_ratio": "1:1",
+    "limiting_reagent": "Neither under the selected equation",
+    "maximum_reaction_extent_mol": 1.0,
+    "theoretical_products": {
+      "NaHSO4_mol": 1.0,
+      "HCl_mol": 1.0
+    },
+    "actual_conversion": "Unknown"
+  },
+  "observations": {
+    "gas_formation": {
+      "status": "Likely if the validated conditions apply",
+      "substance": "HCl"
+    },
+    "color_change": "No color change expected from pure substances",
+    "temperature_change": "Possible but not quantified"
+  },
+  "hazards": [
+    {
+      "substance": "H2SO4",
+      "description": "Corrosive acid"
+    },
+    {
+      "substance": "HCl",
+      "description": "Corrosive and hazardous gas"
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "RULE-INORG-001",
+      "claim": "Under the stated conditions, sodium chloride and sulfuric acid follow the validated equation NaCl + H2SO4 -> NaHSO4 + HCl."
+    },
+    {
+      "evidence_id": "BALANCE-001",
+      "claim": "The equation is atom-balanced and charge-balanced."
+    },
+    {
+      "evidence_id": "STOICH-001",
+      "claim": "The validated reaction uses a 1:1 molar ratio and has a maximum theoretical extent of 1.0 mol for the supplied amounts."
+    },
+    {
+      "evidence_id": "LIMIT-001",
+      "claim": "Theoretical product quantities do not establish actual conversion, rate, yield, or safety."
+    }
+  ],
+  "substance_styles": {
+    "NaCl": "#F5F5F5",
+    "H2SO4": "#D9EAF7",
+    "NaHSO4": "#E8E8E8",
+    "HCl": "#DDEEFF"
+  }
+}
